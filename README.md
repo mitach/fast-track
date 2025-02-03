@@ -1,5 +1,6 @@
 
 # Fast Track Assignment
+[PREVIEW LINK](https://malinka.krokodil.live/)
 
 ### Overview
 The project is built with modern web technologies, utilizing React, Vite, and TypeScript to provide a fast and scalable development experience. It integrates various libraries for animation, physics simulation, charting, and routing to enhance interactivity and visualization.

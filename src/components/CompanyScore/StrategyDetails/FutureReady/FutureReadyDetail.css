@@ -1,0 +1,163 @@
+.future-ready-detail .innovation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.future-ready-detail .innovation-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.future-ready-detail .innovation-card:hover {
+  transform: translateY(-5px);
+}
+
+.future-ready-detail .card-icon {
+  font-size: 2rem;
+}
+
+.future-ready-detail .card-label {
+  font-size: 0.9rem;
+  color: var(--yellow);
+  text-align: center;
+}
+
+.future-ready-detail .card-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.future-ready-detail .trends-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.future-ready-detail .trend-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.future-ready-detail .trend-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.future-ready-detail .investment-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.future-ready-detail .investment-badge.high {
+  background: rgba(39, 174, 96, 0.2);
+  color: #27ae60;
+}
+
+.future-ready-detail .investment-badge.medium {
+  background: rgba(241, 196, 15, 0.2);
+  color: #f1c40f;
+}
+
+.future-ready-detail .investment-badge.low {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+}
+
+.future-ready-detail .trend-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.future-ready-detail .timeframe {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.future-ready-detail .readiness-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.future-ready-detail .readiness-label {
+  font-size: 0.9rem;
+  color: var(--yellow);
+}
+
+.future-ready-detail .readiness-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.future-ready-detail .readiness-fill {
+  height: 100%;
+  background: var(--yellow);
+  transition: width 0.3s ease;
+}
+
+.future-ready-detail .capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.future-ready-detail .capability-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.future-ready-detail .capability-label {
+  font-size: 0.9rem;
+  color: var(--yellow);
+}
+
+.future-ready-detail .capability-value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .future-ready-detail .innovation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .future-ready-detail .trend-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .future-ready-detail .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .future-ready-detail .innovation-card:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .future-ready-detail .innovation-grid,
+  .future-ready-detail .capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+} 

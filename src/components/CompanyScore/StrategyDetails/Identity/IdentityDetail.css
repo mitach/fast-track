@@ -1,0 +1,41 @@
+.identity-detail .values-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.identity-detail .values-list li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.identity-detail .trust-meter {
+  background: rgba(255, 255, 255, 0.1);
+  height: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.identity-detail .trust-fill {
+  background: var(--yellow);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: bold;
+  transition: width 1s ease-out;
+}
+
+@media (max-width: 768px) {
+  .identity-detail .values-list {
+    gap: 0.5rem;
+  }
+
+  .identity-detail .values-list li {
+    font-size: 0.9rem;
+  }
+} 

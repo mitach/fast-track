@@ -1,0 +1,113 @@
+.all-strategies-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    /* margin-right: var(--side-nav-width); */
+}
+
+.strategy-detail {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: white;
+}
+
+.strategy-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--yellow);
+}
+
+.detail-section {
+    margin-bottom: 2rem;
+}
+
+.detail-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--yellow);
+}
+
+.action-plans {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.action-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.action-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.action-header h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.timeline {
+    color: var(--yellow);
+    font-size: 0.9rem;
+}
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: var(--yellow);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: width 1s ease-out;
+}
+
+@media (max-width: 768px) {
+    .all-strategies-container {
+        margin-right: 0;
+        padding: 0 1rem;
+    }
+
+    .strategy-detail {
+        padding: 1rem;
+    }
+
+    .strategy-title {
+        font-size: 1.5rem;
+    }
+
+    .values-list {
+        gap: 0.5rem;
+    }
+
+    .values-list li {
+        font-size: 0.9rem;
+    }
+
+    .market-data-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consequences-container {
+        grid-template-columns: 1fr;
+    }
+
+    .market-metrics {
+        flex-direction: column;
+    }
+}

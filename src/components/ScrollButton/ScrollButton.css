@@ -1,0 +1,64 @@
+.scroll-button-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.scroll-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  pointer-events: auto;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  will-change: transform;
+}
+
+.scroll-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.scroll-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .scroll-button-wrapper {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .scroll-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow-container {
+    width: 20px;
+    height: 20px;
+  }
+
+  .scroll-button svg {
+    width: 20px;
+    height: 20px;
+  }
+} 

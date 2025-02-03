@@ -1,0 +1,214 @@
+.ceo-vision-container {
+    padding: 40px;
+    color: white;
+    background: linear-gradient(180deg,
+            rgba(26, 26, 26, 0) 0%,
+            rgb(20, 20, 20) 50px);
+    position: relative;
+}
+
+.ceo-vision-header {
+    padding: 0 20px;
+    margin-bottom: 4rem;
+}
+
+.ceo-vision-header h2 {
+    margin: 40px 0 0;
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.ceo-vision-header p {
+    font-size: 1.1rem;
+    color: #a1a1a1;
+    max-width: 600px;
+}
+
+.metrics-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.metric-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.chart-container {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    margin-bottom: 1.5rem;
+}
+
+.metric-chart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.metric-content {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+
+.metric-difference {
+    margin-bottom: 0.75rem;
+}
+
+.difference-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.arrow-wrapper {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+}
+
+.trend-arrow {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.trend-arrow.down {
+    transform: rotate(180deg);
+    color: #ff4d4d;
+}
+
+.trend-arrow.up {
+    transform: rotate(0deg);
+    color: #4caf50;
+}
+
+.difference-value {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.02em;
+}
+
+.difference-symbol {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 0.5rem;
+}
+
+.metric-description {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+}
+
+.metric-label {
+    color: #a1a1a1;
+    font-weight: 400;
+    font-family: monospace;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-transform: uppercase;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+}
+
+.legend-color.company {
+    background-color: #FFFFFF;
+}
+
+.legend-color.database {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.legend-label {
+    color: #a1a1a1;
+    font-size: 0.9rem;
+    font-family: monospace;
+
+}
+
+@media (max-width: 960px) {
+    .metrics-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .metrics-container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .ceo-vision-header {
+        padding: 0;
+    }
+
+    .ceo-vision-header h2 {
+        padding-top: 20px;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .chart-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .chart-legend {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .difference-value {
+        font-size: 3rem;
+    }
+
+    .difference-symbol {
+        font-size: 1rem;
+    }
+
+    .trend-arrow {
+        width: 14px;
+        height: 14px;
+    }
+
+    .arrow-wrapper {
+        height: 3rem;
+    }
+}

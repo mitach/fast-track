@@ -1,0 +1,176 @@
+.chartjs-container {
+  padding: 40px;
+  color: white;
+}
+
+.chartjs-header {
+  padding: 0 20px;
+  margin-bottom: 2rem;
+}
+
+.chartjs-title h2 {
+  font-size: 5rem;
+  margin: 40px 0 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.chartjs-title p {
+  color: #666;
+  margin: 0;
+}
+
+.chartjs-main-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  position: relative;
+}
+
+.companies-list {
+  padding: 20px;
+}
+
+.company-section {
+  margin-bottom: 2rem;
+}
+
+.company-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.company-checkbox {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #666;
+}
+
+.company-name {
+  font-family: monospace;
+  color: white;
+}
+
+.company-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.company-data-item {
+  display: flex;
+  justify-content: space-between;
+  color: #dddddd;
+  font-family: monospace;
+  border-bottom: 1px solid #7c7c7c27;
+}
+
+.chart-section {
+  position: relative;
+  padding-top: 3rem;
+}
+
+.chartjs-content {
+  height: 600px;
+  position: relative;
+}
+
+.non-interactive {
+  color: white;
+  font-family: monospace;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  padding: 1rem;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.mobile-legend-explanation {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  color: white;
+  font-size: 14px;
+}
+
+.legend-short {
+  font-weight: bold;
+  min-width: 30px;
+}
+
+.legend-separator {
+  margin: 0 8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.legend-full {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1032px) {
+  .chartjs-main-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .companies-list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .company-data-item {
+    min-width: 250px;
+  }  
+}
+
+@media (max-width: 768px) {
+  .chartjs-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .companies-list {
+    order: 1;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .companies-list.mobile {
+    padding: 0 32px;
+  }
+
+  .chart-section {
+    padding-top: 0;
+    order: 2;
+  }
+
+  .chartjs-content {
+    height: 300px;
+  }
+
+  .company-data-item {
+    min-width: 250px;
+  }
+
+  .chartjs-title h2 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+

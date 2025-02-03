@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --yellow: #fff469;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    font-family: 'Oswald', Arial, sans-serif;
+    color: #ebebeb;
+    background-image: url('/background.png');
+    background-repeat: repeat;
+    background-size: 350px 350px;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.page {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.yellow-text {
+    color: var(--yellow);
+}

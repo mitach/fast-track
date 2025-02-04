@@ -54,12 +54,14 @@ const ComparisonChart: React.FC = () => {
     };
 
     useGSAP(() => {
-        gsap.from(".chart-percentage-number", {
-            textContent: 0,
-            duration: 1.5,
-            snap: { textContent: 1 },
-            ease: "power1.inOut",
-        });
+        if (isInView) {
+            gsap.from(".chart-percentage-number", {
+                textContent: 0,
+                duration: 1.5,
+                snap: { textContent: 1 },
+                ease: "power1.inOut",
+            });
+        }
     }, [isInView]);
 
     return (
@@ -75,10 +77,7 @@ const ComparisonChart: React.FC = () => {
                                 className="chart-bar-value"
                                 initial={{ height: getBarHeight(0) }}
                                 animate={isInView ? { height: getBarHeight(item.value) } : { height: getBarHeight(0) }}
-                                transition={{ 
-                                    duration: 1.5,
-                                    ease: [0.4, 0, 0.2, 1]
-                                }}
+                                transition={{ duration: 1.5 }}
                                 style={{ backgroundColor: item.color }}
                             >
                                 <div className="chart-percentage-wrapper">

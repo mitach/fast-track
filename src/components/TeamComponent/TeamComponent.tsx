@@ -16,7 +16,7 @@ const teamMembers: TeamMember[] = [
         role: "Chief Executive Officer",
         description: "Leading AI innovation with over 15 years of experience in machine learning and enterprise solutions.",
         expertise: ["Strategic Leadership", "AI Architecture", "Business Development"],
-        image: "/team/ceo.jpg" // Add placeholder images or actual team photos
+        image: "/team/ceo.jpg"
     },
     {
         name: "David Rodriguez",

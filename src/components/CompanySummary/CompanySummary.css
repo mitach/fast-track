@@ -49,7 +49,7 @@
     /* Ensures it doesn't block interactions */
 }
 
-.results-summary-left-label {
+.results-summary-left-label  {
     padding: 70px 60px;
     display: flex;
     flex-direction: column;
@@ -170,7 +170,11 @@
 }
 
 @media (max-width: 725px) {
-    .results-summary-left-label {
+    .results-summary-left-label h2{
+        
+    }
+
+    .results-summary-left-label  {
         padding: 20px 0;
     }
 

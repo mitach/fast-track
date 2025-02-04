@@ -1,8 +1,8 @@
-const Account: React.FC = () => {
+import AccountComponent from "../components/Account/AccountComponent";
+
+const Account = () => {
     return (
-        <div>
-            <h1>Account</h1>
-        </div>
+        <AccountComponent />
     );
 };
 
